@@ -1,7 +1,7 @@
 import Router from 'vue-router';
 
 const router = new Router({
-  mode: 'history',
+  mode: 'hash',
   routes: [
     {
       path: '/',
