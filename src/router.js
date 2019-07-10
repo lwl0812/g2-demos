@@ -21,6 +21,18 @@ const router = new Router({
       ],
     },
     {
+      path: '/point',
+      name: 'point',
+      component: () => import('@/views/point'),
+      children: [
+        {
+          path: 'bubble',
+          name: 'point.bubble',
+          component: () => import('@/views/point/bubble'),
+        },
+      ],
+    },
+    {
       path: '*',
       component: () => import(/* webpackChunkName: "not-found" */ '@/views/error-page/404'),
     },

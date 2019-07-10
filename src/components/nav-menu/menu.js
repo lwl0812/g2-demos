@@ -8,4 +8,13 @@ export default [
       },
     ],
   },
+  {
+    title: '点图',
+    children: [
+      {
+        title: '气泡图',
+        path: '/point/bubble',
+      },
+    ],
+  },
 ];
